@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="caseGuardTest.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="imgPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="thicknessLeft" Type="System.Collections.ArrayList" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="thicknessTop" Type="System.Collections.ArrayList" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="thicknessRight" Type="System.Collections.ArrayList" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="thicknessbottom" Type="System.Collections.ArrayList" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="thicknessValue" Type="System.Collections.ArrayList" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="selectedColorR" Type="System.Collections.ArrayList" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="selectedColorG" Type="System.Collections.ArrayList" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="selectedColorB" Type="System.Collections.ArrayList" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

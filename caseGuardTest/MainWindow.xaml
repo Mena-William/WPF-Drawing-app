@@ -1,0 +1,50 @@
+﻿<Window x:Class="caseGuardTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:caseGuardTest"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="636.387" Width="800"
+        WindowState="Normal"
+        WindowStyle="ThreeDBorderWindow">
+    <Grid Margin="0,0,2,41">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" MinWidth="396" />
+            <ColumnDefinition Width="auto" MinWidth="212" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" MinHeight="596"></RowDefinition>
+            <RowDefinition Height="auto" MinHeight="37"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Button Grid.Row="0" Grid.Column="0" Height="22" HorizontalAlignment="Left" Name="btnLoad" VerticalAlignment="Bottom" Width="106" Click="btnLoad_Click" Margin="21,0,0,547">Upload Image</Button>
+
+        <Label Grid.Row="0" HorizontalAlignment="Left" Margin="183,4,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.647,1.604" Height="28" Width="81">Select Color</Label>
+
+        <xctk:ColorPicker SelectedColor="Black" Grid.Row="0" Name="ClrPcker_Background" SelectedColorChanged="ClrPcker_Background_SelectedColorChanged" Margin="183,32,77,542"/>
+
+
+        <Border BorderThickness="3" BorderBrush="Black" Margin="33,88,-106,42" Grid.ColumnSpan="2" Cursor="IBeam">
+            <Canvas Name="paintArea" MouseDown="paintArea_MouseDown" MouseMove="paintArea_MouseMove" Margin="28,25,0,32" 
+                    Cursor="Pen" HorizontalAlignment="Left" Width="624" >
+                <Image Name="imgPhoto" Width="604" Height="383" Canvas.Left="10" Canvas.Top="10" />
+            </Canvas>
+        </Border>
+
+        <Label Content="Select Thickness" Margin="365,6,175,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+
+        <ComboBox Name="ThicknessComboBox" SelectionChanged="ThicknessComboBox_SelectionChanged" HorizontalAlignment="Left" Margin="365,32,0,0" VerticalAlignment="Top" Width="137" Loaded="ThicknessComboBox_Loaded" Grid.ColumnSpan="2" />
+
+        <Button Content="Undo Drawing" Grid.Column="1" HorizontalAlignment="Left" Margin="155,54,-5,0" VerticalAlignment="Top" Width="93" Click="UndoButton_Click"/>
+        <Label Name="testLabel" HorizontalAlignment="Left" Margin="21,4,0,0" VerticalAlignment="Top" Width="170"/>
+        <Button Content="Erase Drawing" Grid.Column="1" HorizontalAlignment="Left" Margin="155,29,-7,0" VerticalAlignment="Top" Width="93" Click="EraseButton_Click"/>
+        <Button Content="Draw" Grid.Column="1" HorizontalAlignment="Left" Margin="155,4,-8,0" VerticalAlignment="Top" Width="93" Click="DrawButton_Click"/>
+        <Button Content="Save Copy" Grid.Column="1" HorizontalAlignment="Left" Margin="294,4,-125,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Save &amp; Close &#xD;&#xA;   For Later" Grid.Column="1" HorizontalAlignment="Left" Margin="294,32,-117,0" VerticalAlignment="Top" Width="75" Height="42" Click="Button_Click_1"/>
+
+
+    </Grid>
+</Window>
